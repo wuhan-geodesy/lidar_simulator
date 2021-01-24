@@ -19,6 +19,12 @@ catkin build
 source ~/catkin_ws/devel/setup.bash
 roslaunch lidar_description example.launch
 ```
+If you have downloaded world models from [here](https://github.com/osrf/gazebo_models),
+and put them to either .gazebo/models or /user/share/gazebo-9/models.
+Then you may use an alternative world model.
+```
+roslaunch lidar_description example.launch world_name:=/usr/share/gazebo-9/worlds/willowgarage.world
+```
 
 ### Todo:
 - Add O1-16, O0-128.
