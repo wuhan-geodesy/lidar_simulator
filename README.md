@@ -26,6 +26,11 @@ Then you may use an alternative world model.
 roslaunch lidar_description example.launch world_name:=/usr/share/gazebo-9/worlds/willowgarage.world
 ```
 
+### Troubleshooting
+1. [Err] [REST.cc:205] Error in REST request
+Referring to [here](https://answers.gazebosim.org//question/25030/gazebo-error-restcc205-error-in-rest-request/#:~:text=As%20can%20be%20seen%20in,ignitionrobotics.org%20inside%20the%20~%2F.), 
+this error can be solved by replacing url: https://api.ignitionfuel.org by url: https://api.ignitionrobotics.org inside the ~/.ignition/fuel/config.yaml file.
+
 ### Todo:
 - Add O1-16, O0-128.
 
